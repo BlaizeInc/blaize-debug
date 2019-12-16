@@ -58,7 +58,10 @@ the default setting is auto
 * `external`: The debugger will create an external terminal for input and output. Be aware that the debugger will not automatically close this terminal when the process exits and it will not be reused.
 
 
-#`Threads View`
+# `Threads View`
 
-The threads view
+The threads view can be accessed by selected by selecting View/Command Palette (Ctrl+Shift+P) and then selecting `Blaize Debug: Open the threads view.` This shows the currently active thread along with a representation of the data being manipulated by this thread.
+
+As the GSP acts on multiple data items silmultaneously it is possible to select an individual item and view the data associated with that particular item in the variables view. Each variable representing multiple items can be viewed as a vector of these items and also one that shows just the data pertinent to the item selected in the threads view.
+
 ![](./images/threads.gif)
